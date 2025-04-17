@@ -18,8 +18,138 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header
-      class="relative bg-[url('./assets/bgarea.webp')] min-h-screen bg-cover bg-no-repeat bg-center"
+    <header class="w-full bg-transparent absolute top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <!-- Mobile Layout (Logo + Hamburguer) -->
+        <div class="flex items-center justify-between lg:hidden">
+          <img src="assets/icone-saude-empreende.png" alt="Logo" class="h-8" />
+
+          <button id="menu-toggle" class="lg:hidden">
+            <svg
+              class="w-8 h-8 text-green-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav
+          id="menu"
+          class="hidden lg:hidden flex-col absolute top-full left-0 w-full bg-white border-t shadow-lg"
+        >
+          <a
+            href="https://saudeempreende.com.br/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >Home</a
+          >
+          <a
+            href="https://saudeempreende.com.br/sobre/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >Sobre</a
+          >
+          <a
+            href="https://saudeempreende.com.br/crieuminfoproduto/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >Crie um infoproduto</a
+          >
+          <a
+            href="https://saudeempreende.com.br/sejaumcolunista/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >Seja um Colunista</a
+          >
+          <a
+            href="https://saudeempreende.com.br/contrate-experience/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >Experience</a
+          >
+          <a
+            href="https://saudeempreende.com.br/doctalk/"
+            class="block px-4 py-3 text-white hover:text-green-600"
+            >DocTalk</a
+          >
+        </nav>
+
+        <!-- Desktop Layout (Logo Central + Menu Abaixo Centralizado) -->
+        <div class="hidden lg:flex flex-col items-center">
+          <div class="flex items-center space-x-2">
+            <!-- <img
+              src="assets/logo-saude-empreende2.svg"
+              alt="Logo"
+              class="h-8"
+            /> -->
+          </div>
+
+          <nav class="mt-3 flex space-x-8">
+            <a
+              href="https://saudeempreende.com.br/"
+              class="text-white hover:text-green-600 relative group"
+            >
+              Home
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+            <a
+              href="https://saudeempreende.com.br/sobre"
+              class="text-white hover:text-green-600 relative group"
+            >
+              Sobre
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+            <a
+              href="https://saudeempreende.com.br/crieuminfoproduto/"
+              class="text-white hover:text-green-600 relative group"
+            >
+              Crie um infoproduto
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+            <a
+              href="https://saudeempreende.com.br/sejaumcolunista/"
+              class="text-white hover:text-green-600 relative group"
+            >
+              Seja um Colunista
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+            <a
+              href="https://saudeempreende.com.br/contrate-experience/"
+              class="text-white hover:text-green-600 relative group"
+            >
+              Experience
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+            <a
+              href="https://saudeempreende.com.br/doctalk/"
+              class="text-white hover:text-green-600 relative group"
+            >
+              DocTalk
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+              ></span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-[url('./assets/bgarea.webp')] md:h-[1100px] bg-cover bg-no-repeat bg-center"
     >
       <div class="absolute inset-0 bg-black/5 z-0"></div>
       <div
@@ -52,10 +182,10 @@
           alt=""
         />
       </div>
-    </header>
+    </section>
 
     <section
-      class="container mx-auto py-32 px-6 flex flex-col md:flex-row items-center md:items-start justify-between"
+      class="container mx-auto text-[#143E3C] py-32 px-6 flex flex-col md:flex-row items-center md:items-start justify-between"
     >
       <div class="md:w-1/2 space-y-4">
         <h1
@@ -95,7 +225,7 @@
       >
         <img
           src="assets/tom&roberta.webp"
-          alt="Mockup Celular"
+          alt="Tom e Roberts"
           width="750"
           height="738"
         />
@@ -162,11 +292,8 @@
       </div>
 
       <div class="mt-20">
-        <h1
-          class="lg:text-7xl text-3xl text-[#143E3C] uppercase franie px-10 text-center"
-        >
-          Explore
-          <span class="font-bold franieBold text-[#143E3C]">nossos</span> <br />
+        <h1 class="lg:text-7xl text-3xl uppercase franie px-10 text-center">
+          Explore <span class="font-bold franieBold">nossos</span> <br />
           <span class="font-bold franieBold">cursos</span> por categoria
         </h1>
 
@@ -236,14 +363,12 @@
           <img src="assets/tom.webp" alt="" />
         </div>
         <div class="md:w-1/2">
-          <h2
-            class="lg:text-6xl text-[#143E3C] text-5xl franie uppercase pb-10 lg:pb-0"
-          >
+          <h2 class="lg:text-6xl text-5xl franie uppercase pb-10 lg:pb-0">
             porque <br />
-            <span class="font-bold franieBold">estudar com</span> <br />
-            <span class="font-bold franieBold">a gente ?</span>
+            estudar com <br />
+            a gente ?
           </h2>
-          <ul class="mt-6 space-y-4 text-[#143E3C] franie container mx-auto">
+          <ul class="mt-6 space-y-4 franie container mx-auto">
             <li class="flex items-start text-lg">
               <span class="franie font-bold"
                 >✅ Especialistas qualificados e atuantes no mercado</span
@@ -299,9 +424,7 @@
         </a>
       </div>
       <div class="absolute bottom-0 left-0 right-0">
-        <div
-          class="border-t border-white border-1 w-full container mx-auto"
-        ></div>
+        <div class="border-t border-white border-1 w-full"></div>
         <p class="text-center franie text-white text-xs py-4">
           © BMOUSE PRODUCTIONS 2025
         </p>
