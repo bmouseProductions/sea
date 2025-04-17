@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+@font-face {
+  font-family: "franie";
+  src: url("fonts/franie/Franie-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "franieBold";
+  src: url("fonts/franie/Franie-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.franie {
+  font-family: "franie", sans-serif;
+}
+
+.franieBold {
+  font-family: "franieBold", sans-serif;
+}

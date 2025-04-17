@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="relative bg-[url('./assets/bg-header.png')] min-h-screen bg-cover bg-no-repeat bg-center"
+    >
+      <div class="absolute inset-0 bg-black/5 z-0"></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
+      >
+        <img
+          src="./assets/logos.png"
+          alt="Decorativa"
+          width="327"
+          class="mb-10"
+        />
+        <h1
+          class="text-4xl franie md:text-5xl font-bold mb-10 uppercase max-w-2xl"
+        >
+          Cursos para profissionais da saúde e público geral
+        </h1>
+        <p class="text-lg md:text-xl franie max-w-xl pb-20 text-[#FAFAFA]">
+          Aprenda com especialistas, desenvolva novas habilidades e transforme
+          sua vida pessoal ou profissional.
+        </p>
+
+        <!-- Outras imagens por cima do bg -->
+
+        <img src="./assets/sea.png" alt="Decorativa" class="" />
+      </div>
+    </header>
+
+    <section
+      class="container mx-auto text-[#143E3C] py-32 px-6 flex flex-col md:flex-row items-center md:items-start justify-between"
+    >
+      <div class="md:w-1/2 space-y-4">
+        <h1
+          class="md:text-5xl text-4xl franie text-center md:text-left max-w-lg uppercase mb-20"
+        >
+          Quem está por trás da plataforma?
+        </h1>
+
+        <div class="space-y-20 mt-20 text-justify md:pr-20">
+          <p class="text-[#143E3C] text-2xl franie">
+            Dedicada a revolucionar o campo da saúde no Brasil, a BMouse
+            Productions — referência nacional em marketing e produção
+            audiovisual — apresenta com orgulho o Saúde Empreende Academy.
+          </p>
+
+          <p class="text-[#143E3C] text-2xl franie">
+            Este projeto ambicioso nasceu da necessidade real de oferecer aos
+            profissionais da saúde ferramentas modernas, práticas e eficazes,
+            alinhadas com a evolução constante do mercado e com as exigências do
+            novo perfil de paciente e consumidor.
+          </p>
+
+          <p class="text-[#143E3C] text-2xl franie">
+            Com uma fusão perfeita de tecnologia, estratégia de marketing e
+            profunda compreensão do setor da saúde, a BMouse vem redefinindo a
+            forma como médicos, clínicas e profissionais da área se posicionam e
+            se comunicam.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="relative md:w-1/2 lg:flex justify-center mt-10 md:mt-0 hidden"
+      >
+        <img
+          src="assets/Image.jpg"
+          alt="Mockup Celular"
+          width="750"
+          height="738"
+        />
+      </div>
+    </section>
+
+    <section class="bg-[#0FFF90] py-16">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-[#143E3C]"
+        >
+          <!-- Bloco 1 -->
+          <div>
+            <h2 class="text-5xl font-bold counter franie" data-target="9">0</h2>
+            <p class="text-sm uppercase mt-2 tracking-widest franie">
+              Anos no mercado
+            </p>
+          </div>
+
+          <!-- Bloco 2 -->
+          <div
+            class="border-t sm:border-t-0 sm:border-l border-[#143E3C] pt-8 sm:pt-0 sm:pl-6"
+          >
+            <h2 class="text-5xl font-bold counter franie" data-target="5000">
+              0
+            </h2>
+            <p class="text-sm uppercase mt-2 tracking-widest franie">
+              Conteúdos produzidos
+            </p>
+          </div>
+
+          <!-- Bloco 3 – com "2+ bilhões" -->
+          <div
+            class="border-t sm:border-t-0 sm:border-l border-[#143E3C] pt-8 sm:pt-0 sm:pl-6"
+          >
+            <h2 class="text-5xl font-bold franie">2+ bilhões</h2>
+            <p class="text-sm uppercase mt-2 tracking-widest franie">
+              Acessos somados
+            </p>
+          </div>
+
+          <!-- Bloco 4 -->
+          <div
+            class="border-t sm:border-t-0 sm:border-l border-[#143E3C] pt-8 sm:pt-0 sm:pl-6"
+          >
+            <h2 class="text-5xl font-bold counter franie" data-target="200">
+              0
+            </h2>
+            <p class="text-sm uppercase mt-2 tracking-widest franie">
+              Marcas lapidadas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32">
+      <div class="container mx-auto">
+        <img
+          src="assets/video.png"
+          class="container mx-auto px-16 md:px-0"
+          alt=""
+        />
+      </div>
+
+      <div class="mt-20">
+        <h1 class="lg:text-7xl text-3xl uppercase franie px-10 text-center">
+          Explore nossos <br />
+          cursos por categoria
+        </h1>
+
+        <div class="container mx-auto md:pl-32">
+          <div class="carousel2 lg:mt-32 text-center mt-10">
+            <div class="w-full">
+              <img
+                src="carousel/marketing.png"
+                class="mx-auto md:mx-0 md:py-0 py-10"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <img
+                src="carousel/saude.png"
+                class="mx-auto md:mx-0 md:py-0 py-10"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <img
+                src="carousel/educacao.png"
+                class="mx-auto md:mx-0 md:py-0 py-10"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <img
+                src="carousel/bem-estar.png"
+                class="mx-auto md:mx-0 md:py-0 py-10"
+                alt=""
+              />
+            </div>
+            <div class="w-full">
+              <img
+                src="carousel/att.png"
+                class="mx-auto md:mx-0 md:py-0 py-10"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Custom arrows container -->
+          <div class="flex justify-center gap-4 mt-6 slick-custom-arrows">
+            <button
+              class="prev bg-transparent border border-black text-black w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <span class="text-base"><</span>
+            </button>
+            <button
+              class="next bg-[#0FFF90] text-black w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <span class="text-base">></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-20 px-6">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-around gap-10"
+      >
+        <div
+          class="relative rounded-lg flex items-center justify-center md:w-1/2"
+        >
+          <img src="assets/iamge2.jpg" alt="" />
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="lg:text-6xl text-5xl franie uppercase pb-10 lg:pb-0">
+            porque <br />
+            estudar com <br />
+            a gente ?
+          </h2>
+          <ul class="mt-6 space-y-4 franie container mx-auto">
+            <li class="flex items-start text-lg">
+              <span class="franie font-bold"
+                >✅ Especialistas qualificados e atuantes no mercado</span
+              >
+            </li>
+            <li class="flex items-start text-lg">
+              <span class="franie font-bold"
+                >✅ Conteúdo acessível, online e direto ao ponto</span
+              >
+            </li>
+            <li class="flex items-start text-lg">
+              <span class="franie font-bold">✅ Certificados de conclusão</span>
+            </li>
+            <li class="flex items-start text-lg">
+              <span class="franie font-bold"
+                >✅ Para todas as fases da vida — do crescimento profissional ao
+                bem-estar pessoal</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="relative w-full bg-[url('./assets/bg-footer.png')] min-h-screen bg-cover bg-no-repeat bg-center"
+    >
+      <div class="absolute inset-0 bg-black/5 z-0"></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center"
+      >
+        <img
+          src="./assets/logos-branco.png"
+          alt="Decorativa"
+          width="327"
+          class="mb-10"
+        />
+        <h1
+          class="text-4xl md:text-5xl font-bold franie mb-10 uppercase max-w-2xl"
+        >
+          Escolha seu próximo curso
+        </h1>
+        <p class="text-lg md:text-xl max-w-xl franie pb-20 text-[#FAFAFA]">
+          Aprenda com especialistas, desenvolva novas habilidades e transforme
+          sua vida pessoal ou profissional.
+        </p>
+        <a
+          href="#"
+          class="bg-black text-white franie text-sm md:text-base font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-white hover:text-black transition mb-16"
+        >
+          VER TODOS OS CURSOS DISPONÍVEIS
+          <span class="text-xl leading-none">↗</span>
+        </a>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <div class="border-t border-white border-1 w-full"></div>
+        <p class="text-center franie text-white text-xs py-4">
+          © BMOUSE PRODUCTIONS 2025
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      const counters = document.querySelectorAll(".counter");
+
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / 100;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target.toLocaleString("pt-BR"); // ex: 2.000.000.000
+          }
+        };
+
+        updateCount();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        if ($(window).width() > 768) {
+          $(".carousel2").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $(".prev"),
+            nextArrow: $(".next"),
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
