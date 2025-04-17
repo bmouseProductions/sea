@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="w-full bg-transparent absolute top-0 z-50">
-      <div class="container mx-auto px-4 py-3">
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <!-- Mobile Layout (Logo + Hamburguer) -->
         <div class="flex items-center justify-between lg:hidden">
           <img src="assets/icone-saude-empreende.png" alt="Logo" class="h-8" />
 
-          <button id="menu-toggle" class="lg:hidden">
+          <button id="menu-toggle" class="lg:hidden focus:outline-none">
             <svg
               class="w-8 h-8 text-green-600"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,105 +42,104 @@
           </button>
         </div>
 
+        <!-- Menu Mobile -->
         <nav
           id="menu"
-          class="hidden lg:hidden flex-col absolute top-full left-0 w-full bg-white border-t shadow-lg"
+          class="hidden flex-col absolute top-full left-0 w-full bg-white border-t shadow-lg lg:hidden"
         >
           <a
             href="https://saudeempreende.com.br/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >Home</a
           >
           <a
             href="https://saudeempreende.com.br/sobre/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >Sobre</a
           >
           <a
             href="https://saudeempreende.com.br/crieuminfoproduto/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >Crie um infoproduto</a
           >
           <a
             href="https://saudeempreende.com.br/sejaumcolunista/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >Seja um Colunista</a
           >
           <a
             href="https://saudeempreende.com.br/contrate-experience/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >Experience</a
           >
           <a
             href="https://saudeempreende.com.br/doctalk/"
-            class="block px-4 py-3 text-white hover:text-green-600"
+            class="block px-4 py-3 text-gray-800 hover:text-green-600"
             >DocTalk</a
           >
         </nav>
 
-        <!-- Desktop Layout (Logo Central + Menu Abaixo Centralizado) -->
+        <!-- Desktop Layout -->
         <div class="hidden lg:flex flex-col items-center">
           <div class="flex items-center space-x-2">
-            <!-- <img
-              src="assets/logo-saude-empreende2.svg"
-              alt="Logo"
-              class="h-8"
-            /> -->
+            <!-- <img src="assets/logo-saude-empreende2.svg" alt="Logo" class="h-8" /> -->
           </div>
 
-          <nav class="mt-3 flex space-x-8">
+          <nav
+            class="mt-4 flex flex-wrap justify-center space-x-6 xl:space-x-10"
+          >
             <a
               href="https://saudeempreende.com.br/"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               Home
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
             <a
               href="https://saudeempreende.com.br/sobre"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               Sobre
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
             <a
               href="https://saudeempreende.com.br/crieuminfoproduto/"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               Crie um infoproduto
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
             <a
               href="https://saudeempreende.com.br/sejaumcolunista/"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               Seja um Colunista
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
             <a
               href="https://saudeempreende.com.br/contrate-experience/"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               Experience
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
             <a
               href="https://saudeempreende.com.br/doctalk/"
-              class="text-white hover:text-green-600 relative group"
+              class="text-white hover:text-green-400 relative group"
             >
               DocTalk
               <span
-                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
               ></span>
             </a>
           </nav>
