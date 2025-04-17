@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sea - Landing page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@
   </head>
   <body>
     <header
-      class="relative bg-[url('./assets/bg-header.png')] min-h-screen bg-cover bg-no-repeat bg-center"
+      class="relative bg-[url('./assets/bgarea.webp')] min-h-screen bg-cover bg-no-repeat bg-center"
     >
       <div class="absolute inset-0 bg-black/5 z-0"></div>
       <div
@@ -32,9 +32,11 @@
           class="mb-10"
         />
         <h1
-          class="text-4xl franie md:text-5xl font-bold mb-10 uppercase max-w-2xl"
+          class="text-4xl franie md:text-5xl font-bold mb-10 uppercase max-w-2xl leading-loose"
         >
-          Cursos para profissionais da saúde e público geral
+          Cursos para
+          <span class="font-bold franieBold">profissionais da saúde</span> e
+          <span class="font-bold franieBold">público geral</span>
         </h1>
         <p class="text-lg md:text-xl franie max-w-xl pb-20 text-[#FAFAFA]">
           Aprenda com especialistas, desenvolva novas habilidades e transforme
@@ -43,7 +45,8 @@
 
         <!-- Outras imagens por cima do bg -->
 
-        <img src="./assets/sea.png" alt="Decorativa" class="" />
+        <img src="./assets/sea.png" width="943" alt="Decorativa" class="" />
+        <img src="assets/seta.svg" class="absolute bottom-10" alt="" />
       </div>
     </header>
 
