@@ -29,3 +29,19 @@ body {
 .franieBold {
   font-family: "franieBold", sans-serif;
 }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* A seta sobe 15px */
+  }
+  100% {
+    transform: translateY(0); /* A seta volta para a posição inicial */
+  }
+}
+
+.animated-arrow {
+  animation: moveUpDown 1.5s ease-in-out infinite; /* Aplica a animação com duração de 1.5s, suavização e repetição infinita */
+}
